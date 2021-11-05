@@ -1,7 +1,7 @@
 <?php
 //db creds
 define('DB_HOST', 'localhost'); //db host
-define('DB_NAME', 'dummy'); //db name
+define('DB_NAME', 'dynamic_class_query'); //db name
 define('DB_USER', 'root'); //db user
 define('DB_PASS', ''); //db pass
 

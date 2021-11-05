@@ -11,8 +11,6 @@ function findThis($pathRoot){
 }
 $pathToRoot = findThis('autoload.php');
 include_once $pathToRoot.'autoload.php';
-
-include($pathToRoot.'sqlClassCrud.php')
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -27,25 +25,32 @@ include($pathToRoot.'sqlClassCrud.php')
 </head>
 <body>
 <?php
-    $tableName = 'booking';
-    $vehicle_id = 'vehicle_id';
-    $vhid = 2;
-    $param = 'where '.$vehicle_id.' = '.$vhid.'';
-    $test = new dbCrud;
-    $result = json_decode($test->dbSelect($tableName, $param));
-    //print('<pre>'.print_r(json_decode($result),true).'</pre>');
+ $dbCrud = new dbCrud;
 
+   
     
-    //     foreach ($result as $key => $value) {
-    //     print('<pre>'.print_r($value->date,true).'</pre>');
-    // }
+    
 
-    $results = array_column(
-        $result,
-        "date"
-    );
 
-    print('<pre>'.print_r($results,true).'</pre>');
+
+
+
+
+
+
+
+
+   
+
+
+
+
+
+
+
+
+
+
 ?>
 
    

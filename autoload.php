@@ -11,6 +11,7 @@
 	//include_once __DIR__ . ( PHP_OS == 'Linux' ? '' : '/' ) . '/test/sqldemo/sqlClassCrud.php';
 
 	// include global functions
-	include_once __DIR__  . '/test/sqldemo/sqlClassCrud.php';
+	include_once __DIR__  . '/sqlClassCrud.php';
+	include_once __DIR__  . '/php/functions.php';
 
 
